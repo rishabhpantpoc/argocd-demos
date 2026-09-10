@@ -10,8 +10,9 @@ spec:
     targetRevision: main
     path: declarative_approach/online_shop
   destination:
-    server: https://172.31.6.84:33893   # Replace with your Cluster Url, To get run: `argocd cluster list`
-    namespace: default
+    server:  https://192.168.49.2:8443  # Replace with your Cluster Url, To get run: `argocd cluster list`
+    namespace: defaultkubectl -n argocd edit application <app-name>
+
   syncPolicy:
     automated:
       prune: true
